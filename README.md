@@ -2,11 +2,11 @@
 Install tuto for Lineage 18.1 on Note 10 (tested on N970F)
 
 
-#N970F LineageOS 18.1 install note WITH ROOT#
+# N970F LineageOS 18.1 install note WITH ROOT #
 
 (this post cost 15 hours of research starting from 2021/05/30 04:00 AM GMT+02:00 so its in context)
 
-##DISCLAIMER: ##
+## DISCLAIMER: ##
 
 NOT legally responsible, but STILL **morally** responsible of any blablabla I can put in this tuto
 
@@ -14,13 +14,14 @@ Warranty void and all that, you know the stuff
 
 And more seriously, **TAKE YOUR TIME, DON'T PUT DEADLINES ON YOURSELF, EAT, SLEEP, DRINK WELL WHILE DOING THIS, THIS REQUIRES *PATIENCE* TO MAKE IT WORK, IF ANY SALT, DO A BREAK AND REEEAAAD TUTOS**
 
-BEFORE YOU START ANY OF THAT:
--Save EFS to avoid accidental IMEI lost (or maybe loose your IMEI)
--***Unlock bootloader !!!*** (or brick your hardware)
+## BEFORE YOU START ANY OF THAT:
+- Save EFS to avoid accidental IMEI lost (or maybe loose your IMEI)
+- ***Unlock bootloader !!!*** (or brick your hardware)
 
 todo: add the actual steps to do that
 
-##Preface:##
+## PREFACE: ##
+
 A little attention to detail, that you may need to understand even if you never seen it
 When using Android 10 and less on Note 10 (on the N970F at least)
 the bootloader is kind of glitched
@@ -40,7 +41,9 @@ Android 11(+?) Note 10 unlocked bootloader screens:
 This is normal and doesn't change anything to magisk boot manip
 
 
+## PROCEDURE
 
+### Make your Stock Magisk ROM
 
 - Download your stock Android **11** (make sure it is 11 or you will lose A LOT of time) ROM
 - Extract BL + AP + CP + CSC (not HOME_CSC)
@@ -50,18 +53,37 @@ This is normal and doesn't change anything to magisk boot manip
 - patch your AP file (under install tick recovery)
 - then choose your AP file to patch it
 - Copy patched AP to your phone with `adb pull /sdcard/download/magisk_patched-23000_xxxxx.tar.md5 /path/to/local/AP_patched.tar`
+
+### Install your magisk stock ROM
+
 - Run Odin v3.14 on your PC
 - Reboot the phone into download mode (Vol Up + Vol Down + Plug USB-C to PC)
 - In Odin load BL + patched_AP + CP + CSC (not HOME_CSC)
-- Boot the phone in magisk mode ( Vol Up + Side/Power Button until unofficial bootload splashscreen)
+- Untick "Auto-reboot" (or get ready between both next steps)
+- Click "Start in Odin"
+- Boot the phone in magisk mode ( Vol Up + Side/Power Button until unofficial bootloader splashscreen )
 - Setup the phone
 - Install Magisk from the github's APK (v23.0 at the time)
 - Start Magisk
 - It will ask for more setup and a reboot
 - Accept and let (and prepare yourself to noot in magisk mode when) the phone reboots
+
+### Check Magisk State (and backup EFS if you need it and you still can u_u)
+
 - Restart Magisk
 - Check that "Uninstall Magisk" is there, it means magisk and root are OK on your OS
-- get the last TWRP for your Note 10 variant (for N970F, we use the d1 version)
+- (backup EFS here if it's not too late)
+
+### get needed files
+
+- get [the last TWRP for your Note 10 variant](https://forum.xda-developers.com/t/recovery-official-3-5-0-x-twrp-for-galaxy-note-10-5g-exynos.4198413/) (for N970F, we use the d1 version)
+- get [lineage18.1 for Note 10](https://forum.xda-developers.com/t/rom-signature-spoofing-lineageos-18-1-for-note10-5g-note10-note10-exynos.4189503/)
+- get [Magisk boot image for your revision](https://forum.xda-developers.com/t/rom-signature-spoofing-lineageos-18-1-for-note10-5g-note10-note10-exynos.4189503/post-83911107) (for N970F, we use the d1 version)
+
+### Install Lineage 
+
+(this is a one shot, if you miss here, a safe point to restart is from **Install your magisk stock ROM**)
+
 - Go Back to Odin, click "Reset"
 - Reboot the phone into download mode (Vol Up + Vol Down + Plug USB-C to PC)
 - put twrp's tar into AP
@@ -75,9 +97,9 @@ This is normal and doesn't change anything to magisk boot manip
 - untick everything
 - tick "Data"
 - Enable MTP with your phone plug to PC
-- copy "lineage-18.1-[random build string].zip to your phone
+- copy "lineage-18.1-\[random build string.zip\] to your phone
 - (copy GAPPS here if you need it) to your phone
-- copy the right magisk boot img from post #3 to your phone
+- copy the right magisk boot img to your phone
 - Disable MTP (probably useless but I'm in the old Android 1.6 way)
 - go back to twrp home
 - Click "Wipe"
