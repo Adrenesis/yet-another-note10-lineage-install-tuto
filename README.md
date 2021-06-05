@@ -212,7 +212,7 @@ This is normal and doesn't change anything to magisk boot manip
 
 **This will underclock the phone, this is a low energy profile for people searching for phone and bettery life, THIS will probably make your phone LAAAG, a lot, it's been tested on simple tasks which are described below**
 
-> todo: battery performance screenshot here
+![](https://github.com/Adrenesis/yet-another-note10-lineage-install-tuto/blob/main/battery_benchmark.png?raw=true)
 
 **also, don't mess with these settings if you don't know what you are doing, especially if I don't talk about them here, kernel setup is not a friendy territory to mess with**
 
