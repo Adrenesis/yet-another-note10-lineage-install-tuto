@@ -2,8 +2,6 @@
 
 Install tuto for Lineage 18.1 on a **Samsung Note 10** (tested on _N970F_)
 
-{:toc}
-
 # N970F LineageOS 18.1 install note WITH ROOT #
 
 (this post cost 15 hours of research starting from 2021/05/30 04:00 AM GMT+02:00 so its in context)
