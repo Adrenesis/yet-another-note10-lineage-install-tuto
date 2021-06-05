@@ -42,7 +42,7 @@ My parents
 - provider of tutorials to install ThunderStormS on Galaxy Note 10
 - provider of the "go back to lineage kernel before" explaination too
 
-and more like the magisk guy, the Lineage team (especially Joker and Anand, they both helped me with LesserAudioSwitch)...
+and more like the magisk individual, the Lineage team (especially Joker and Anand, they both helped me with LesserAudioSwitch)...
 
 **A pleasure to have them doing the work Samsung didn't**
 
