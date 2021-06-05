@@ -273,3 +273,17 @@ This is normal and doesn't change anything to magisk boot manip
 - Let the phone in low performance **all the time**
 - Put it in high perf whan you want to game, or do complicated things with your phone
 - **go back in low performance when your are done**
+
+### Backup everything up (so you can go back to this paradise whenever you mess with things)
+
+- Restart in recovery (Vol Up + Plug to PC + Power/Side Button)
+- go to "Backup"
+- tick every partitions
+- Swipe to backup
+
+## Cool Packages to install (as FLOSS I could do)
+
+- Silence
+- AdAway (say goodbye to AdWares)
+- T.E.A.M. Battery Bar (not open T_T, submit a Libre alternative in the issues or PR if you know one)
+- LesserAudioSwitch (not open, but saved my ability to use the phone, it lets you manage the phone's sound cards on Android 1, and use a USB-DAC for headphones and the internal mic at the same time)
