@@ -80,7 +80,9 @@ This is normal and doesn't change anything to magisk boot manip
 
 ## PROCEDURE
 
-### Make your Stock Magisk ROM
+### Installing LineageOS with magisk
+
+#### Make your Stock Magisk ROM
 
 - Download your stock Android **11** (make sure it is 11 or you will lose A LOT of time) ROM
 - Extract BL + AP + CP + CSC (not HOME_CSC)
@@ -91,7 +93,7 @@ This is normal and doesn't change anything to magisk boot manip
 - then choose your AP file to patch it
 - Copy patched AP to your phone with `adb pull /sdcard/download/magisk_patched-23000_xxxxx.tar.md5 /path/to/local/AP_patched.tar`
 
-### Install your magisk stock ROM
+#### Install your magisk stock ROM
 
 - Run Odin v3.14 on your PC
 - Reboot the phone into download mode (`Volume Up` + `Volume Down` + Plug USB-C to PC)
@@ -105,19 +107,19 @@ This is normal and doesn't change anything to magisk boot manip
 - It will ask for more setup and a reboot
 - Accept and prepare yourself to boot in magisk mode when the phone reboots
 
-### Check Magisk State (and backup EFS if you need it and you still can u_u)
+#### Check Magisk State (and backup EFS if you need it and you still can u_u)
 
 1. Restart Magisk
 2. Check that "Uninstall Magisk" is there, it means magisk and root are OK on your OS
 3. (backup EFS here if it's not too late)
 
-### get needed files
+#### get needed files
 
 - get [the last TWRP for your Note 10 variant](https://forum.xda-developers.com/t/recovery-official-3-5-0-x-twrp-for-galaxy-note-10-5g-exynos.4198413/) (for N970F, we use the d1 version)
 - get [lineage18.1 for Note 10](https://forum.xda-developers.com/t/rom-signature-spoofing-lineageos-18-1-for-note10-5g-note10-note10-exynos.4189503/)
 - get [Magisk boot image for your N10 variant](https://forum.xda-developers.com/t/rom-signature-spoofing-lineageos-18-1-for-note10-5g-note10-note10-exynos.4189503/post-83911107) (for N970F, we use the d1 version)
 
-### Install Lineage 
+#### Install Lineage 
 
 (this is a one shot, if it fails anywhere, a safe point to restart is from **Install your magisk stock ROM**)
 
@@ -169,22 +171,22 @@ This is normal and doesn't change anything to magisk boot manip
 - tick every partitions
 - Swipe to backup
 
-## Installing ThundeRStormS Kernel
+### Installing ThundeRStormS Kernel
 
-### Get your old lineage kernel (or ThundeRStormS will not work on your phone)
+#### Get your old lineage kernel (or ThundeRStormS will not work on your phone)
 
 - Open your LineageOS zipfile
 - Uncompress boot.img and rename it los-boot.img
 - Enable MTP under "Mount" (with only "Data" ticked)
 - copy los-boot.img to your phone
 
-### Get ThundeRStormS Kernel
+#### Get ThundeRStormS Kernel
 
 - Download the last AOSP CLANG Kernel from [here](https://androidfilehost.com/?w=files&flid=324562)
 - Enable MTP under "Mount" (with only "Data" ticked)
 - copy ThundeRStormS-Kernel-vx.x.x-AOSP-R...CLANG..zip
 
-### Install ThundeRStormS Kernel
+#### Install ThundeRStormS Kernel
 
 - In recovery go to "Install"
 - Click 'Install Image'
@@ -208,7 +210,7 @@ This is normal and doesn't change anything to magisk boot manip
 
 [^warning_tos]: It explains you the limit of what you are using, and some dos and donts about the kernel
 
-### Setting up a low performance profile
+#### Setting up a low performance profile
 
 **This will underclock the phone, this is a low energy profile for people searching for phone and bettery life, THIS will probably make your phone LAAAG, a lot, it's been tested on simple tasks which are described below**
 
@@ -262,7 +264,7 @@ This is normal and doesn't change anything to magisk boot manip
 - Tick "GPU"
 - Name it "low performance"
 
-### Switching between low and high performance
+#### Switching between low and high performance
 
 - Start ThunderTweaks
 - Click the menu button (top left of the screen)
@@ -270,7 +272,7 @@ This is normal and doesn't change anything to magisk boot manip
 - double click the wanted profile
 - Apply
 
-### Usage
+#### Usage
 
 - Let the phone in low performance **all the time**
 - Put it in high perf whan you want to game, or do complicated things with your phone
@@ -283,7 +285,7 @@ This is normal and doesn't change anything to magisk boot manip
 - tick every partitions
 - Swipe to backup
 
-## Cool Packages to install (as FLOSS I could do)
+### Cool Packages to install (as FLOSS I could do)
 
 - Silence
 - AdAway (say goodbye to AdWares)
