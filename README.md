@@ -288,4 +288,4 @@ This is normal and doesn't change anything to magisk boot manip
 - Silence
 - AdAway (say goodbye to AdWares)
 - T.E.A.M. Battery Bar (not open T_T, submit a Libre alternative in the issues or PR if you know one)
-- LesserAudioSwitch (not open, but saved my ability to use the phone, it lets you manage the phone's sound cards on Android 1, and use a USB-DAC for headphones and the internal mic at the same time)
+- LesserAudioSwitch (not open, but saved my ability to use the phone, it lets you manage the phone's sound cards on Android 11, and use a USB-DAC for headphones and the internal mic at the same time)
