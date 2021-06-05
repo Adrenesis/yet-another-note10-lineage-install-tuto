@@ -1,8 +1,11 @@
 ## PREFACE: Android 11 and audio interfaces
 
 Talking about bad design, let's talk about Android's sound card manager. It decide things for you, ask for nothing, and is not configurable...
+
 There is also Samsung that decided, Audio interfaces where optionnal to a phone (sweet move).
+
 We could talk about USB-DAC adapters, nothing is described correctly, half of them work, most of them don't allow to recharge the phone. 
+
 It's just the usual cable cartel you might say, but this is barely usable and for anyone with bad hearing this phone is literraly a right angle oven you use to grind you hear on.
 
 ## CREDITS: 
