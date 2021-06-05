@@ -25,6 +25,8 @@ The Samsung Galaxy Note 10 provide a strong hardware, 3 CPUs, for a total of 8 c
 
 I **think** a phone shouldn't be capable of more than 1 Ghz without its user being aware, **this is litterally the kind of bad design that brings the phone to explode in your pocket and make you disabled for life (even if Samsung has a strong security, a battery is very expensive to the Earth).**
 
+![](https://github.com/Adrenesis/yet-another-note10-lineage-install-tuto/blob/main/battery_benchmark.png?raw=true)
+
 ## CREDITS
 
 My parents
